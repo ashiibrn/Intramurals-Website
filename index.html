@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonts.css">
+    <title>PSAU Intramurals</title>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        .container img{
+            width: 15.9%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: solid 2px rgba(255, 255, 255, 0.684);
+            opacity: 0.4;
+            transition: all ease-in-out 0.5s;
+        }
+        .container img:hover{
+            width: 30%;
+            opacity: 10;
+        }
+        .body_caption{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            text-align: center;
+            /* border: solid 2px white; 
+            border-radius: 15px;
+            background-color: rgba(169, 169, 169, 0.7);*/
+        }
+        .body_caption p:nth-of-type(1){
+            font-family: 'Fira Code';
+            font-size: clamp(1.875rem, 0.4412rem + 2.549vw, 3.5rem);
+        }
+        .body_caption p:nth-of-type(2){
+            font-family: 'Swanky And Moomoo';
+            font-size: clamp(1rem, 0.1176rem + 1.5686vw, 2rem);
+        }
+        .body_caption button{
+            background-color: darkslategrey;
+            border-radius: 35px;
+            border: solid 2px white;
+            padding: 0 15px;
+            color: white;
+        }
+        .details h2{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/img/cas_lethal_lions.jpg" alt="cas_lethal_lions">
+        <img src="./assets/img/castech_raging_bulls.jpg" alt="castech_raging_bulls">
+        <img src="./assets/img/cfaf_vicious_scorpions.jpg" alt="cfaf_vicious_scorpions">
+        <img src="./assets/img/coecs_fearless_phoenix.jpg" alt="coecs_fearless_phoenix">
+        <img src="./assets/img/coed_ferocious_jaguars.jpg" alt="coed_ferocious_jaguars">
+        <img src="./assets/img/cvm_howling_direwolves.jpg" alt="cvm_howling_direwolves">
+        <img src="./assets/img/dabee_striking_bees.jpg" alt="dabee_striking_bees">
+    </div>
+    <div class="body_caption">
+        <p>PSAU Intramurals 2k25</p>
+        <p>"Empowering The Minds, Invigorating Physique: Fostering Community Cohesion Through Sports"</p>
+        <button onClick="window.location.href='sports.html'">Get Started</button>
+    </div>
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="./assets/popper.min.js"></script>
+</body>
+</html>
